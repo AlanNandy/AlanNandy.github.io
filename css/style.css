@@ -1,0 +1,544 @@
+/*---------------------------------------
+    General               
+-----------------------------------------*/
+body {
+	background: #ffffff;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-style: normal;
+	font-weight: 300;
+   overflow-x: hidden;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #FFFFFF;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+
+a:hover, a:active, a:focus {
+  color: #000000;
+  outline: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-style: normal;
+  font-weight: 300;
+}
+
+h1,h2,h3 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 42px;
+  padding-bottom: 14px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 52px;
+  margin-top: 0px;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 32px;
+  padding-bottom: 6px;
+}
+
+h4 {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 6px;
+}
+
+h5 {
+  color: #FFFFFF;
+}
+
+strong {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.background-image {
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+    min-height: 75vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 22px;
+}
+
+
+
+/*---------------------------------------
+    Navigation section              
+-----------------------------------------*/
+.custom-navbar {
+    margin-bottom: 0;
+    background-color: #ffffff;
+}
+
+.custom-navbar .navbar-brand {
+    color: #000000;
+	text-shadow:1px 1px #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+.custom-navbar .nav li a {
+    color: #AAAAAA;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+.custom-navbar .nav li a:hover {
+    background: transparent;
+    color: #000000;
+}
+
+.custom-navbar .navbar-nav > li > a:hover,
+.custom-navbar .navbar-nav > li > a:focus {
+  background-color: transparent;
+}
+
+.custom-navbar .nav li.active > a {
+    background-color: transparent;
+    color: #000000;
+}
+
+.custom-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+}
+
+.custom-navbar .navbar-toggle {
+    background-color: transparent;
+}
+
+.custom-navbar .navbar-toggle .icon-bar {
+    background: #000000;
+    border-color: transparent;
+}
+
+@media(min-width:768px) {
+    .custom-navbar {
+        padding: 12px 0;
+        border-bottom: 0;
+        background: 0 0; 
+    }
+    .custom-navbar.top-nav-collapse {
+        background: #ffffff;
+        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+        padding: 0;
+    }
+
+}
+
+
+
+/*---------------------------------------
+    Home section              
+-----------------------------------------*/
+#home {
+    background: url('../img/home-bg.jpg') no-repeat fixed;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    position: relative;
+    padding: 0px 0px;
+}
+
+#home .overlay {
+    background: #121212;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+}
+
+#home .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#home .home-thumb {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 45px 0 45px;
+}
+
+#home h1 {
+  padding-bottom: 18px;
+}
+
+#home .col-md-6 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#home .home-img {
+	width:250px;
+	height:250px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-125px;
+	margin-left:-125px
+}
+
+.section-btn {
+  background-color: transparent;
+  border: 3px solid #FFFFFF;
+  border-radius: 100px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  padding: 12px 36px;
+  margin-top: 42px;
+  transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
+}
+
+.section-btn:hover {
+  background: #414141;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+.section-btn:focus {
+  background-color: #414141;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+
+
+/*---------------------------------------
+   About section              
+-----------------------------------------*/
+.about {
+  text-align: center;
+}
+
+.about .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.about {
+  position: relative;
+}
+
+.about {
+  background: #222;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about .about-thumb {
+  padding: 52px 22px 52px 22px;
+}
+
+.about .about-thumb .fa {
+  font-size: 42px;
+  padding-bottom: 22px;
+}
+
+.color-dark {
+  color: #222;
+}
+
+.color-darkgray {
+  color: #444;
+}
+
+.color-lightgray {
+	color: #666
+}
+
+.color-light {
+	color: #888
+}
+
+.color-white {
+  color: #FFFFFF;
+}
+
+.bg-dark {
+  background: #222;
+}
+
+.bg-darkgray {
+  background: #444;
+}
+
+.bg-lightgray {
+	background: #666
+}
+
+.bg-light {
+	background: #888
+}
+
+.bg-white {
+  background: #fff;
+}
+
+
+
+/*---------------------------------------
+   Specialty section              
+-----------------------------------------*/
+#specialty {
+  text-align: center;
+}
+
+#specialty {
+    background: url('../img/specialty-bg.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    position: relative;
+    padding: 100px 0px;
+}
+
+#specialty .overlay {
+    background: #121212;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+}
+
+#specialty .fa {
+  font-size: 42px;
+  margin-top: 32px;
+  margin-bottom: 22px;
+}
+
+#specialty p {
+  padding-top: 32px;
+}
+
+
+
+/*---------------------------------------
+   Hobby section              
+-----------------------------------------*/
+#hobby {
+  text-align: center;
+}
+
+#hobby {
+    background: url('../img/hobby-bg.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    position: relative;
+    padding: 100px 0px;
+}
+
+#hobby .overlay {
+    background: #121212;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+}
+
+#hobby .fa {
+  font-size: 42px;
+  margin-top: 32px;
+  margin-bottom: 22px;
+}
+
+#hobby p {
+  padding-top: 32px;
+}
+
+
+
+/*---------------------------------------
+   Footer section              
+-----------------------------------------*/
+#footer {
+  text-align: center;
+}
+
+footer {
+    padding: 50px 0px;
+}
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    border: 2px solid transparent;
+    color: #999;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 22px 4px 10px 4px;
+}
+
+.social-icon li a:hover {
+    background: #666;
+    border-color: #ffffff;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.modal-dialog{
+	width:300px;
+	position:relative;
+}
+
+.modal-body{
+	height:300px;
+	position:relative;
+}
+
+.modal-img {
+	width:250px;
+	height:250px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-125px;
+	margin-left:-125px
+}
+
+
+/*---------------------------------------
+   Mobile Responsive         
+-----------------------------------------*/
+
+@media only screen and (max-width: 580px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: inherit;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: inherit;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .custom-navbar .navbar-brand {
+    line-height: 18px;
+  }
+
+  #home .home-thumb {
+    height: auto;
+    padding-top: 125px;
+    padding-bottom: 0px;
+  }
+	
+	#home .home-img {
+	width:150px;
+	height:150px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:20px;
+	margin-left:-75px
+	}
+	
+  #home .container,
+  .about .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+	
+	.section-btn {
+  margin-top: 0px;
+	}
+
+  .about .col-md-3 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .background-image {
+    position: relative;
+    min-height: 65vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-title {
+    padding-bottom: 12px;
+  }
+}
