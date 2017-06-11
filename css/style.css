@@ -1,6 +1,7 @@
 /*---------------------------------------
     General               
 -----------------------------------------*/
+
 body {
 	background: #ffffff;
    font-family: 'Source Sans Pro', sans-serif;
@@ -21,7 +22,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  color: #000000;
+  color: #FFFFFF;
   outline: none;
 }
 
@@ -106,6 +107,7 @@ p {
 /*---------------------------------------
     Navigation section              
 -----------------------------------------*/
+
 .custom-navbar {
     margin-bottom: 0;
     background-color: #ffffff;
@@ -178,6 +180,7 @@ p {
 /*---------------------------------------
     Home section              
 -----------------------------------------*/
+
 #home {
     background: url('../img/home-bg.jpg') 50% 0 repeat-y fixed;
     background-size: cover;
@@ -259,6 +262,7 @@ p {
 /*---------------------------------------
    About section              
 -----------------------------------------*/
+
 .about {
   text-align: center;
 }
@@ -336,6 +340,7 @@ p {
 /*---------------------------------------
    Specialty section              
 -----------------------------------------*/
+
 #specialty {
   text-align: center;
 }
@@ -373,6 +378,7 @@ p {
 /*---------------------------------------
    Hobby section              
 -----------------------------------------*/
+
 #hobby {
   text-align: center;
 }
@@ -408,14 +414,85 @@ p {
 
 
 /*---------------------------------------
+    Left section              
+-----------------------------------------*/
+
+#left {
+  background: #444444;
+	position: relative;
+}
+
+#left .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#left .left-thumb  {
+  padding: 22px 42px 42px 42px;
+}
+
+#left .media-heading {
+  margin-bottom: 0px;
+}
+
+#left .media .fa {
+  font-size: 42px;
+  margin-right: 14px;
+}
+
+#left small {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+
+
+/*---------------------------------------
+    Right section              
+-----------------------------------------*/
+
+#right {
+  background: #666666;
+	position: relative;
+}
+
+#right .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#right .right-thumb  {
+  padding: 22px 42px 42px 42px;
+}
+
+#right .media-heading {
+  margin-bottom: 0px;
+}
+
+#right .media .fa {
+  font-size: 42px;
+  margin-right: 14px;
+}
+
+#right small {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+
+
+/*---------------------------------------
    Footer section              
 -----------------------------------------*/
+
 #footer {
   text-align: center;
 }
 
 footer {
-    padding: 50px 0px;
+    padding: 75px 0px;
 }
 
 .social-icon {
@@ -476,6 +553,121 @@ footer {
 
 
 /*---------------------------------------
+   go-top         
+-----------------------------------------*/
+
+#GoTop{
+	width:40px;
+	height:40px;
+  background-color: transparent;
+  border: 2px solid #AAAAAA;
+	position:fixed;
+	bottom:30px;
+	right:30px;
+  border-radius: 5px;
+	font-size:20pt;
+	text-align:center;
+	line-height:35px;
+	color:#AAAAAA;
+	text-decoration:none;
+  transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
+}
+
+#GoTop:hover {
+  background: #414141;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+#GoTop:focus {
+  background-color: #414141;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+#GoIndex{
+	width:40px;
+	height:40px;
+  background-color: transparent;
+  border: 2px solid #AAAAAA;
+	position:fixed;
+	bottom:80px;
+	right:30px;
+  border-radius: 5px;
+	font-size:20pt;
+	text-align:center;
+	line-height:35px;
+	color:#AAAAAA;
+	text-decoration:none;
+  transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
+}
+
+#GoIndex:hover {
+  background: #414141;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+#GoIndex:focus {
+  background-color: #414141;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+
+/*---------------------------------------
+   go-top         
+-----------------------------------------*/
+
+.pad-0 { padding: 0; }
+
+.container-fluid { 
+	padding-top:1px;
+	padding-right:0px;
+	padding-bottom:0px;
+	padding-left:1px;
+	max-width: 1530px;
+}
+
+.gallery-img {
+	padding: 0px 1px 1px 0px !important;
+	margin: 0 !important;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.img-fluid {
+	max-width:100%;
+	height:auto
+}
+
+.gallery-name {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.gallery-name-h1 { 
+	color: #0264cf;
+	font-size: 3rem; 
+}
+
+.gallery-name-h2 {
+	color: #6c6c6c;
+	font-size: 1.4rem;
+}
+
+
+/*---------------------------------------
    Mobile Responsive         
 -----------------------------------------*/
 
@@ -517,6 +709,8 @@ footer {
 	}
 	
   #home .container,
+	#left .container,
+	#right .container,
   .about .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -526,7 +720,10 @@ footer {
   margin-top: 0px;
 	}
 
-  .about .col-md-3 {
+  
+  #left .col-md-6,
+  #right .col-md-6,
+	.about .col-md-3 {
     padding: 0;
     margin: 0;
   }
