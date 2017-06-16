@@ -1,5 +1,15 @@
 $(window).load(function() {
+
 	$('.preloader').fadeOut(1000);
+
+	$('.gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		gallery: {
+			enabled: true
+		}
+	});
+
 });
 
 $(document).ready(function() {
