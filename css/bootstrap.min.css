@@ -7067,9 +7067,9 @@ button.close {
 	position: absolute;
 	width: auto;
 	margin: 10px auto;
-	left:0;
-	right:0;
-	top:50%
+	left: 0;
+	right: 0;
+	top: 50%
 }
 
 .modal-content {
