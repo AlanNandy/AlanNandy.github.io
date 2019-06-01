@@ -529,6 +529,10 @@ p {
 	padding: 22px 42px 42px 42px;
 }
 
+#left .left-caption {
+	padding: 64px 42px 184px 42px;
+}
+
 #left .media-heading {
 	margin-bottom: 0px;
 }
@@ -538,7 +542,7 @@ p {
 	margin-right: 14px;
 }
 
-#left small {
+#left bold {
 	color: #FFFFFF;
 	font-weight: bold;
 }
@@ -563,6 +567,10 @@ p {
 	padding: 22px 42px 42px 42px;
 }
 
+#right .right-caption {
+	padding: 64px 42px 184px 42px;
+}
+
 #right .media-heading {
 	margin-bottom: 0px;
 }
@@ -572,7 +580,7 @@ p {
 	margin-right: 14px;
 }
 
-#right small {
+#right bold {
 	color: #FFFFFF;
 	font-weight: bold;
 }
